@@ -1,0 +1,40 @@
+
+/*    HEADER CSS RULES     */
+
+
+/*     NAVIGATION CSS RULES   */
+
+
+/*     MAIN CSS RULES   */
+input {
+    border-radius:3px;
+    padding:.5rem;
+    width:30%;
+    border:black solid 1px;
+    justify-content: left;
+}
+fieldset {
+    padding-left:2rem;
+}
+
+input.submit{
+    border-radius:8px;
+    background:$red;
+    color:white;
+    font-weight:700;
+    max-width:20%;
+    margin-top:2rem;
+
+}
+
+/*     FOOTER CSS RULES   */
+
+
+footer div.infogallery {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width:505px;
+    flex-basis: 50%;
+    margin:0 auto;
+}

@@ -1,0 +1,70 @@
+//Grid Area
+body {
+    margin: 0 auto;
+}
+div.wrapper {
+    display:grid;
+    grid-auto-rows: auto;
+    grid-auto-columns: auto;
+    grid-template-areas:
+    "header header"
+    "menuopen content"
+    "footer footer";
+
+}
+
+
+/*    HEADER CSS RULES     */
+
+header {
+    max-width: 65rem;
+    grid-area: header;
+}
+/*     NAVIGATION CSS RULES   */
+
+nav.clearfix {
+    display:none;
+    height:2985px;
+
+}
+div#navDiv2 {
+    padding-top:0;
+    min-width:20vw;
+    max-width:34vw;
+    max-height:2350px;
+
+}
+div#navDiv2 span {
+    display:none;
+}
+div#navDiv2 ul#secondaryNav {
+    padding-top:0rem;
+}
+
+
+/*     MAIN CSS RULES   */
+
+main {
+    padding:.5rem;
+    grid-area:content;
+    margin:0;
+}
+main p {
+    padding:.5rem;
+    max-width:250px;
+    min-width:20vw;
+    margin:0;
+    word-wrap: normal;
+}
+main img {
+    max-width:30vw;
+}
+div.contentGroup{
+    display:block;
+}
+
+footer {
+    width:100%;
+    max-width:1200px;
+    grid-area:footer;
+}

@@ -1,0 +1,234 @@
+//font-family: 'Roboto Slab', serif;
+//font-family: 'Noto Sans KR', sans-serif;
+
+//GRID AREA 
+    
+div.wrapper {
+    max-width:1200px;
+    margin:0 auto;
+    display:grid;
+    grid-template-areas:
+        "hamburgerMenu"
+        "header"
+        "content"
+        "footer"
+        "menuopen";
+}
+/* Header Rules */
+
+header {
+    margin:0 auto;
+    background-color:$headerColor;
+    display:flex;
+    flex-direction: column;
+    max-width: 64rem;
+    height:11rem;
+    width:100%;
+    grid-area: header;
+}
+
+header#header {
+    background-image: url(../../Tech_Watch/images/Logo.png);
+    background-repeat: no-repeat;
+    background-position-x: 1rem;
+    background-position-y: 3rem;
+    height:253px;
+}
+
+
+/*     NAVIGATION CSS RULES    */
+
+
+    
+// places the navigation bar at the top of the page
+nav.clearfix {
+        display:block;
+        width:100%;
+        height: 2.75rem;
+        background-color: $menuColor;
+        grid-area: hamburgerMenu;
+    }
+    
+//Styles the clickable hamburger button
+button#hamburgerBtn {
+		display: block;
+		width: 7rem;
+        height: 2.75rem;
+        background: none;
+        color: $menuTextColor;
+        text-decoration:none;
+		border: 0 none;
+        font-size: 1.3rem;
+        font-weight: normal;
+        text-align: left;
+        //used to enlarge an entity to match any words that may also be used, like OPEN
+        i {font-size: 1.4rem; font-style: normal;}
+        
+    }
+#hamburgerBtn a {
+        text-decoration:none;
+        color:$menuTextColor;
+    }
+button#hamburgerBtn a i {
+        content: '&equiv';
+        color:$menuTextColor;
+        font-size:40px;
+        padding:0;
+        max-height:144px;
+    }
+
+
+
+
+//SECONDARY OPEN MOBILE MENU
+    div#navDiv2 {
+        grid-area:menuopen;
+        background: $menuColor;
+        color: $menuTextColor;
+        padding-top:.5rem;
+        display: block;
+        width: 100vw;
+        height:100vh;
+        color: $menuTextColor;
+        text-decoration:none;
+		border: 0 none;
+        font-size: 1.3rem;
+        font-weight: normal;
+        text-align: left;
+        //used to enlarge an entity to match any words that may also be used, like OPEN
+        i {font-size: 1.4rem; font-style: normal;}
+    }
+    div#navDiv2 span {
+        padding-left:.5rem;
+    
+    }
+   div#navDiv2 i{
+        font-size: 40px;
+        width:1rem;
+        height:1rem;
+        color:white;
+        text-decoration: none;
+    }
+    div#navDiv2 a {
+        text-decoration: none;
+    }
+    div#navDiv2 ul{
+        padding:0;
+        margin:0;
+        width:100%;
+        padding-top:.5rem;
+
+    }
+    div#navDiv2 ul li{
+        list-style-type:none;
+        padding:1rem;
+        text-align:center;
+    }
+    li.active{
+        background:lighten($color:$menuColor, $amount: 20)
+    }
+    div#navDiv2 ul#secondaryNav {
+        padding-top:2rem;
+        width:100%;
+    }
+
+
+
+
+
+ /* End Mobile Styles */
+
+
+
+/*    MAIN CSS RULES    */
+
+main { 
+    padding: 1rem 0;
+    display: block; 
+    margin:0 auto;
+    max-width: 64rem;
+    grid-area: content;
+}
+
+main h1 {
+    font-family:'Josefin Slab', serif;
+    color: $mainColor;
+    margin-left:1rem;
+    margin-top:4rem;
+}
+main h2 {
+    font-family:'Josefin Slab', serif;
+    color: $mainColor;
+    margin-left:1rem;
+}
+main h4 {
+    padding:0;
+    padding-top:1rem;
+    margin:0;
+    font-size:1.5rem;
+}
+
+main p {
+    font-family: 'Noto Sans KR', sans-serif;
+    margin:0 auto;
+    padding:1rem;
+}
+main img {
+    float: right;
+    flex-flow:wrap;
+    max-width:80vw;
+    padding:1vw;
+    margin:0 auto;
+}
+
+div.contentGroup {
+    display:flex;
+    flex-direction: column;
+}
+div.contentGroup img {
+    margin: 1 auto;
+}
+
+
+
+/* FOOTER CSS RULES */
+
+
+
+footer {
+    grid-area: footer;
+    font-family: 'Spartan', sans-serif;
+    text-align: center;
+    max-width:64rem;
+    height:20rem;
+    width:100%;
+    margin:0 auto;
+    padding:0;
+    background-color:$blue;
+    color:$white;
+    font-size:1.4rem;
+    
+}
+footer div.footertxt {
+    padding-top:1rem;
+    padding-bottom:1rem;
+    width:100vw;
+    margin:0;
+    padding-right:0;
+    padding-left:0;
+}
+
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+    
+}
+
+h2 {
+    font-family: 'Spartan', sans-serif;
+}
+h6 {
+    font-family: 'Spartan', sans-serif;
+}

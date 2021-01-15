@@ -1,0 +1,134 @@
+/*----------- BODY --------------*/
+body {
+    font-size: 16px;
+    font-family: Verdana, sans-serif; }
+  
+  /*----------- HEADER --------------*/
+  header {
+    margin: 0;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+    background-color: #dadeff;
+    /*End of header h1 tag*/
+    /*End of header h2 tag*/ }
+    header h1 {
+      font-family: 'Abel', sans-serif;
+      color: darkblue;
+      margin-top: 2.8rem;
+      margin-bottom: 0rem;
+      margin-left: 7rem; }
+    header h2 {
+      font-family: 'Abel', sans-serif;
+      color: #205da3;
+      visibility: hidden; }
+    header img {
+        margin-left:1rem;
+        float:left;
+    }
+
+  
+  /*End of Header tag*/
+  /*----------- NAVIGATION --------------*/
+  nav {
+    font-family: 'Abel', sans-serif;
+    background-color: #666;
+    height: 100%;
+    margin: 0rem;
+    height: 2rem; }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0rem;
+    margin: 0rem;
+    height: 100%; }
+  
+  nav ul li {
+    float: left;
+    background-color: #ffedcc;
+    width: 25%;
+    margin: 0rem; }
+  
+  nav ul li a {
+    margin: 0rem;
+    display: block;
+    background-color: #444;
+    color: #eee;
+    border-left: 1px solid #777;
+    padding: .5rem 0;
+    text-decoration: none;
+    font-size: .9rem;
+    text-align: center; }
+  
+  nav ul li:first-child a {
+    border-left: none; }
+  
+  nav ul li a:hover {
+    background-color: #eee;
+    color: #333;
+    margin: 0; }
+  
+  nav ul li.active a {
+    background-color: #000;
+    color: #fff;
+    margin: 0; }
+  
+  /*----------- MAIN --------------*/
+  main {
+    padding: 0;
+    min-height: 10rem;
+    background-color: #ffedcc;
+    margin: 0rem; }
+
+  main figure.hero img {
+      width:100%;
+  }
+  h1 {
+    font-family: 'Abel', sans-serif;
+    padding-top: 1rem;
+    margin-top: 0rem;
+    margin-left: 1rem; }
+  
+  main figure.hero {
+    width:100%;
+    margin: 0 auto;
+    margin: 0;
+    padding: 0; 
+}
+
+  
+  p {
+    font-family: 'Abel', sans-serif;
+    padding: 1rem;
+    margin: 0rem; }
+  
+  main figure.smallimg {
+    float: right; 
+    margin: 0 0 0 2% auto;    
+}
+main figure.smallimg img {
+    width:95%;
+    max-width: 450px;
+    max-height:317px;
+    margin:0 auto;
+}
+main figure.smallimg figcaption {
+    text-align: center;
+    font-size: .7rem;
+}
+  
+  /*----------- FOOTER --------------*/
+  footer {
+    font-family: 'Abel', sans-serif;
+    background-color: #dadeff;
+    padding: .5rem 2%;
+    text-align: center; 
+}
+  
+  /*----- Clearfix: Force an Element not to collapse -----*/
+  .clearfix:after {
+    content: "";
+    display: inline-block;
+    clear: both;
+    margin: 0rem;
+    padding: 0px;
+    background-color: #ffedcc; }

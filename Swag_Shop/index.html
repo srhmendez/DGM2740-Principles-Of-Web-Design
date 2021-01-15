@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Boston">
+<meta name="author" content="Sarah Mendez">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Swag Shop 10</title>
+
+
+
+<!-- STYLE SHEETS -->
+<link href="/css/styles.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Josefin+Slab|Spartan&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+
+
+</head>
+
+<body>
+<div class="wrapper">
+<header id="header">
+  <div class="titles">
+    <h1>Timber</h1>
+    <h2>The essence of quality</h2>
+  </div>
+</header>
+
+<!--Navigation-->
+
+<nav class="clearfix">
+
+  <button id="hamburgerBtn" onclick="toggleMenu()">
+    <span><i>&otimes;</i>CLOSE</span>
+    <span><i>&equiv;</i>OPEN</span>
+  </button>
+
+  <ul id="primaryNav">
+    <li><a class="active" href="#">About</a></li>
+    <li class="parent" >
+      <a id="subitem" href="#">Department</a>
+      <ul class="nestedul">
+        <li>Clothing</li>
+        <li>Makeup</li>
+        <li>Jewlery</li>
+        <li>Shoes</li>
+      </ul>
+    </li>
+    <li class="parent" >
+      <a id="subitem"  href="#">Locations</a>
+      <ul class="nestedul">
+        <li>Downtown</li>
+        <li>Central</li>
+        <li>River Heights</li>
+        <li>Willow Glen</li>
+      </ul>
+        
+    </li>
+    <li><a href="#">Pay Bills</a></li>
+    <li><a href="#">Meetings</a></li>
+    <li class="parent" >
+      <a  id="subitem" href="#">Contact Us</a>
+      <ul class="nestedul">
+        <li>Phone</li>
+        <li>Email</li>
+        <li>Social Media</li>
+        <li>Fax</li>
+      </ul>
+    </li>
+  </ul>
+
+</nav>  
+
+
+
+<!--MAIN HTML-->
+<main>
+
+    <h1>Submit A Claim to Customer Service</h1>
+    <form method="GET" action="../Swag_Shop/thanks.html">
+    <fieldset>
+
+    <div>
+
+      <legend>Your Contact Information</legend><br>
+        <label class="top" for="fname">First name:*<br>
+         <input type="text" id="fname" name="fname" required><br></label>
+        <label class="top" for="lname">Last name:*<br>
+          <input type="text" id="lname" name="lname" required><br></label>
+        <label class="top" for="lname">Phone Number:*<br>
+          <input placeholder="000-000-0000" type="tel" id="phone" name="phone" required><br></label>
+        <label class="top" for="email">Email:*<br>
+          <input placeholder="youremail@emailprovider.com" type="email" id="email" name="email" optional></label>
+        <label class="top" for="webiste">Product URL:<br>
+          <input type="url" id="website" name="website" optional></label>
+    
+    </div>
+   
+   
+    </fieldset>
+
+
+    <fieldset>
+
+      <div>
+      <legend>Customer Status</legend>
+         <br>
+        
+         <label class="middle" for="return"><input class="radio" type="radio" id="return" name="return" value="return">I am a returning customer.</label><br>
+
+         <label class="middle" for="new"><input class="radio" type="radio" id="new" name="return" value="new">I'm a new customer.</label><br>
+      
+      </div>
+    
+    </fieldset>
+
+    <fieldset>
+
+      <div>
+      <legend>Personal Information</legend>
+        <br>
+        <br>
+        <label class="third" for="date">Date of Purchase:</label><br>
+        <input type="date" id="date" name="date"><br>
+
+        <label class="third" for="date">Number Of Items In Order:</label><br>
+        <input type="number" id="number" name="number"><br>
+        
+        <label class="third" for="brandname">Name of Brand</label><br>
+        <input type="text" id="brandname" name="brandname"><br>
+        <br>
+        <br>
+        <label class="third" for="products">Why are you submitting a claim?</label>
+        
+        
+        <label class="third" for="shoes"><input class="checkbox" type="checkbox" id="products" name="damage" value="yes">Damaged Item(s)</label>
+        <label class="third" for="clothing"><input class="checkbox" type="checkbox" id="products" name="wrong" value="yes">Wrong Item(s)</label>
+        <label class="third" for="home"><input class="checkbox" type="checkbox" id="products" name="nolike" value="yes">Didn't Like Product</label>
+        <label class="third" for="makeup"><input class="checkbox" type="checkbox" id="products" name="nocome" value="yes">My Order Never Arrived</label>
+        <br>
+        <label class="third" >What are you contacting us about?<select name="product"><br><br>
+                                <option>Please Choose from the Following...&#9662;</option>
+                              <option value="makeup">Makeup</option>
+                              <option value="shoes">Shoes</option>
+                              <option value="hair">Hair Care</option>
+                              <option value="clothing">Clothing</option>
+                              <option value="skincare">Skin Care</option>
+                              <option value="homegoods">Home Goods</option>
+                            </select></label>
+       </div>
+       <label class="credit">
+        <br>
+        <br>
+        <br>
+       </fieldset>
+       <fieldset>
+        <span><h4>Credit Card Information</h4><br></span>
+        <label class="third" for="cardname">Name On Credit Card:*<br>
+          <input placeholder="" type="text" id="cardnum" name="cardnum" required><br></label>
+        <label class="third" for="cardnum">Credit Card Number*<br>
+          <input placeholder="" type="number" id="cardnum" name="cardnum" required><br></label>
+        
+        <label class="third" for="cardtype">Please Choose Card Type:*
+            <select id="cardtype" required>
+                <option value=" ">Select Card...&#9662;</option>
+                <option value="1">Visa</option>
+                <option value="2">Mastercard</option>
+                <option value="3">American Express</option>
+                <option value="4">Discover</option>
+            </select>
+          </label>
+          <label class="third" for="expiration">Expiration:*<br><input type="date" id="expiration" name="expiration" required></label>
+      </label>
+        <br>
+        <br> 
+                   
+    </fieldset>
+    
+    <input value="Submit Claim" type="submit" class="submit">
+
+  </form>
+</main>
+
+
+<footer>
+  <div class="footertxt"><h6>&copy; 2020 &bull; Sarah Mendez &bull; Utah Valley University &bull; Phone 123-456-7890</h6></div>
+</footer>
+
+
+
+<script src="/js/main.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</body>
+</html>

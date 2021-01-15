@@ -1,0 +1,46 @@
+header, nav, main {
+        max-width: 75rem;
+        margin:auto;
+}
+
+/*----------- BODY --------------*/
+
+
+
+/*----------- HEADER --------------*/
+header {
+    visibility: visible;
+
+h1 {
+    margin-top:1rem;
+    margin-bottom:0rem;
+    margin-left:8rem;
+}/*End of header h1 tag*/
+h2 {
+    visibility: visible;
+    font-weight: normal;
+    margin-left:8rem;
+
+}/*End of header h2 tag*/
+}
+
+/*----------- NAVIGATION --------------*/
+
+
+
+/*----------- MAIN --------------*/
+
+main{
+    h1{margin:1rem;}
+}
+
+/*----------- FOOTER --------------*/
+    
+footer{
+    max-width: 75rem;
+    margin:0 auto;
+    padding-top:1rem;
+    padding-bottom:1rem;
+    padding-left:0;
+    padding-right: 0;
+}
