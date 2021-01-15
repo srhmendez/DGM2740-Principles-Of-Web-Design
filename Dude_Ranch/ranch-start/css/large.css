@@ -1,0 +1,29 @@
+@media only screen and (min-width: 1028px) {
+
+nav li {
+    width: auto;
+}
+
+nav a {
+    padding: .5rem 1rem;
+}
+
+nav ul {
+    padding: 2%;
+}
+
+header, footer, nav, main {
+    max-width: 75rem;
+    margin: auto;
+}
+
+main figure {
+    width: 31%;
+}
+
+div.news {
+    column-count: 3;
+}
+
+
+} /*End of the Medium Query*/

@@ -1,0 +1,33 @@
+
+
+
+header h1 {
+    font-size:4rem;
+}
+header h2 {
+    width:100%;
+}
+
+.logo {
+    margin-top:1rem;
+}
+
+nav li {
+    width:auto;
+}
+nav a {
+    padding: .6rem 3rem;
+}
+
+header, footer, nav, main {
+    max-width: 75rem;
+    margin: auto;
+}
+
+
+div.gallery figure {
+    flex-basis:29%;
+    
+}
+
+

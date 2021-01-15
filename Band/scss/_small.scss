@@ -1,0 +1,285 @@
+
+
+/*-----------------------General Formatting-------------------------*/
+
+body {
+    max-width:75rem;
+    background-color: rgb(153,185,162);
+    margin:auto 0;
+    padding:0;
+    width:100%;
+}
+body#wrapper {
+    margin:0 auto;
+    width:100%;
+}
+
+/*-----------------------Header Element----------------------------*/
+
+header.clearfix {
+    background:rgb(153,185,162);
+    height:320px;
+    width:100%;
+    margin:0;
+    padding:0;
+
+}
+figure#hero {
+    max-width:1200px;
+    margin:0 auto;
+    position: relative;
+    display:inline-block;
+    width:100%;
+    
+}
+
+figure#hero img{
+    width:100%;
+}
+
+div#titles {
+    position: absolute;
+    max-width: 1200px;
+    z-index: 999;
+    margin:0 auto;
+    left:0;
+    right: 0;
+    top:15%;
+    margin-bottom:0;
+    width:100%;
+}
+header div#titles h1.hero, h2.hero {
+    margin-left:1rem;
+    margin-right:0;
+    
+
+}
+header h1.hero {
+    margin: 0;
+    padding: 0;
+    font-size: 7rem;
+    font-family:'Fredericka the Great', cursive;
+    padding-bottom:0px;
+    color:rgb(200, 200, 255);
+    
+}
+header h2.hero {
+    margin-top:0;
+    font-size: 2rem;
+    position: absolute;
+    max-width: 1200px;
+    margin-bottom:0;
+    z-index: 999;
+    left:0;
+    right: 0;
+    top:75%;
+    color:rgb(131, 131, 255);
+}
+
+/*-----------------------Navigation Element----------------------------*/
+nav {
+    background-color:rgb(198, 198, 255);
+    width: 100%;
+    max-width:1200px;
+    position:relative;
+}
+nav ul#navlist {
+    list-style-type: none;
+    background-color: rgb(198, 198, 255);
+    margin:0;
+    padding:0;
+    display: flex;
+    justify-content: space-evenly;
+    width:100%;
+}
+nav ul#navlist li {
+    width:100%;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+nav ul#navlist li.active{
+    background:rgba(255, 255, 255, 0.233);
+    width:100%;
+    padding-left:20px;
+    margin-right:22px;
+
+}
+nav ul#navlist li#contact {
+    width:100%;
+}
+nav ul#navlist li#concerts {
+    width:100%;
+}
+nav ul#navlist li#booking {
+    width:100%;
+}
+
+/*-----------------------Hero Image Element----------------------------*/
+
+div#hero img{
+    width:100%;
+    padding:0;
+    margin:0;
+    background: rgb(220, 255, 220);
+}
+
+/*-----------------------Main Elements----------------------------*/
+
+main h1 {
+    color:rgb(44, 53, 175);
+    margin:0 auto;
+    width:40px;
+    margin-left:1rem;
+}
+main div.rows div.column h3 {
+    color:rgb(44, 53, 175);
+    margin:0 auto;
+    text-align: left;
+    margin-top:1rem;
+    margin-left:1rem;
+}
+main h1 {
+    width:100%;
+}
+main {
+    margin: 0;
+    padding:0;
+    
+}
+main p {
+    margin:0;
+    padding-bottom:10rem;
+    padding-right:20px;
+    padding-left:20px;
+    text-align: left;
+
+}
+
+section.bandmembers figure.mainimg {
+    margin:0;
+    padding:50px;
+    margin-bottom:1rem; 
+}
+
+section.bandmembers figure {
+    margin:0 auto;
+    float:right;
+    margin-right:50px;
+   
+}
+main figure img#Sakura {
+    float:right;
+    clip-path: circle(100% at 100% 100%);
+    shape-outside: circle(100% at 100% 100%);
+    margin:.5rem;
+}
+main figure img#Leo{
+    float:right;
+    clip-path: polygon(0 0, 100% 0, 100% 100%);
+    shape-outside:polygon(0 0, 100% 0, 100% 100%);
+    margin:.5rem;
+
+}
+main figure img#Zach {
+    float:right;
+    clip-path: polygon(0 0, 100% 0, 50% 100%);
+    shape-outside: polygon(0 0, 100% 0, 50% 100%);
+    margin:.5rem;
+
+}
+main figure img#Paloma {
+    float:right;
+    clip-path: circle(100% at 100% 0);
+    shape-outside:circle(100% at 100% 0);
+    margin:.5rem;
+}
+
+section.bandmembers div.rows {
+    display:flex;
+}
+
+section.bandmembers div.rows div.column {
+    margin:20px auto;
+    padding:20px;
+    text-align: center;
+}
+
+/*-----------------------Gallery Elements----------------------------*/
+section#gallery{
+    margin:0;
+    padding:0;
+    padding-top:12rem;
+    height:2000rem;
+}
+
+main h3#phototitle {
+    font-size: 5rem;
+    margin-left:2rem;
+    padding:0;
+    margin-top:0;
+    margin-bottom:0;
+    color:white;
+    text-align: left;
+    width:100%;
+    font-family: 'Fredericka the Great', cursive;
+}
+section#gallery div figure img{
+    margin:0;
+    padding:0;
+}
+section#gallery div figure img{
+    margin:0;
+    padding:0;
+}
+section#gallery div figure{
+    margin:0;
+    padding:0;
+}
+section#gallery div figure.galleryimg {
+    margin:0;
+    padding:0;
+}
+
+/*-----------------------Gallery Lazy Load--------------------------*/
+
+
+section.gallery figure {
+    width: 100%;
+    height: 0;
+    padding-bottom:55%; /* You define this doing image height / width * 100% */
+    position: relative;
+    margin:0;
+}
+section.gallery figure img.lazy {
+    width: 100%;
+    margin-bottom:50px;
+}
+
+/*-----------------------Footer Element----------------------------*/
+
+footer {
+    font-family: 'Fredericka the Great', cursive;;
+    margin:auto 0;
+    display: unset;
+    text-align: center;
+    padding:1rem;
+    width:100%;
+}
+footer.footer p.footertxt{
+    text-align:center;
+    background:rgba(220, 255, 220, 0.644);
+    padding:1rem;
+    margin:0 auto;
+    
+}
+
+
+
+
+/*--------------Keeps an element from collapsing-------------------*/
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear:both;
+}

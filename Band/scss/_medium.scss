@@ -1,0 +1,292 @@
+
+
+
+/*-----------------------General Formatting-------------------------*/
+
+body {
+    max-width:75rem;
+    background-color: rgb(153,185,162);
+    margin:auto 0;
+}
+body#wrapper {
+    margin:0 auto;
+}
+
+/*-----------------------Header Element----------------------------*/
+
+header.clearfix {
+    background:rgb(153,185,162);
+    height:500px;
+    width:100%;
+    margin:0;
+    padding:0;
+
+}
+div#titles {
+    position: absolute;
+    max-width: 1027px;
+    z-index: 1020;
+    margin:0 auto;
+    left:0;
+    right: 0;
+    top:21%;
+}
+header h1, h2 {
+    margin-left:1rem;
+    margin-right:0;
+    
+
+}
+header div.titles h1.hero {
+    margin: 0;
+    padding: 0;
+    font-size: 10rem;
+    font-family:'Fredericka the Great', cursive;
+    padding-bottom:0rem;
+    color:rgb(200, 200, 255);
+    
+}
+header div.titles h2.hero {
+    margin:0;
+    margin-top:0rem;
+    font-size: 2rem;
+    position: absolute;
+    margin:0 auto;
+    left:0;
+    right: 0;
+    color:rgb(131, 131, 255);
+}
+
+/*-----------------------Hero Image Element----------------------------*/
+
+div#hero figure img{
+    max-width: 1027px;
+    width:100%;
+    padding:0;
+    margin:0;
+    position: relative;
+    display:inline-block;
+}
+    
+figure#hero {
+    max-width: 1027px;
+    margin:0 auto;
+    position: relative;
+    display:inline-block;
+    
+}
+
+
+
+/*-----------------------Navigation Element----------------------------*/
+nav {
+    background-color:rgb(198, 198, 255);
+    width: 100%;
+    max-width:1200px;
+    position:relative;
+}
+nav ul#navlist {
+    list-style-type: none;
+    background-color: rgb(198, 198, 255);
+    margin:0;
+    padding:0;
+    display: flex;
+    max-width:1200px;
+}
+nav #navList li{
+    float:left;  
+}
+nav ul#navlist li {
+    width:25%;
+    padding-top:10px;
+    padding-bottom:10px;
+    color:rgb(0, 9, 128);
+}
+nav ul#navlist li#menu {
+    width:25%;
+}
+nav ul#navlist li.active{
+    background:rgba(255, 255, 255, 0.233);
+    width:20%;
+    margin-right:40px;
+    padding-left:50px;
+}
+nav ul#navlist li#members {
+    padding-left:60px;
+}
+nav ul#navlist li#contact {
+    padding-left:30px;
+}
+nav ul#navlist li#concerts {
+    padding-left:30px;
+    width:170px;
+}
+nav ul#navlist li#booking {
+    padding-left:10px;
+    width: 190px;
+}
+
+/*-----------------------Main Elements----------------------------*/
+main h1 {
+    color:rgb(44, 53, 175);
+    margin:0 auto;
+    width:40px;
+    margin-left:1rem;
+}
+main div.column h3 {
+    color:rgb(44, 53, 175);
+    margin:0 auto;
+    text-align: left;
+    margin-top:1rem;
+    margin-left:0;
+    
+}
+main h1 {
+    width:100%;
+}
+main {
+    margin: 0;
+    padding:0;
+    
+}
+main p {
+    margin:0;
+    padding-right:0px;
+    padding-left:0px;
+    text-align: left;
+    padding-bottom:0;
+
+}
+
+
+section.bandmembers figure {
+    margin:0 auto;
+    margin-right:50px;
+   
+}
+main figure img#Sakura {
+    float:right;
+    clip-path: circle(100% at 100% 100%);
+    shape-outside: circle(100% at 100% 100%);
+    margin:.2rem;
+    max-width:150px;
+}
+main figure img#Leo{
+    float:right;
+    clip-path: polygon(0 0, 100% 0, 100% 100%);
+    shape-outside:polygon(0 0, 100% 0, 100% 100%);
+    margin:.2rem;
+    max-width:150px;
+
+}
+main figure img#Zach {
+    float:right;
+    clip-path: polygon(0 0, 100% 0, 50% 100%);
+    shape-outside: polygon(0 0, 100% 0, 50% 100%);
+    margin:.2rem;
+    max-width:150px;
+
+}
+main figure img#Paloma {
+    float:right;
+    clip-path: circle(100% at 100% 0);
+    shape-outside:circle(100% at 100% 0);
+    margin:.2rem;
+    max-width:130px;
+}
+.rows {
+    margin: 0 auto;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+div.column {
+    margin:20px auto;
+    padding:20px;
+    text-align: center;
+    width:300px;
+    min-height:400px;
+}
+
+/*-----------------------Gallery Elements----------------------------*/
+section#gallery{
+    margin:0;
+    padding:0;
+    padding-top:12rem;
+    height:2000rem;
+    width:100%;
+}
+
+main h3#phototitle {
+    font-size: 5rem;
+    margin-left:2rem;
+    padding:0;
+    margin-top:0;
+    margin-bottom:0;
+    color:white;
+    text-align: left;
+    width:100%;
+    font-family: 'Fredericka the Great', cursive;
+}
+section#gallery div figure img{
+    margin:0;
+    padding:0;
+}
+section#gallery div figure img{
+    margin:0;
+    padding:0;
+}
+section#gallery div figure{
+    margin:0;
+    padding:0;
+}
+section#gallery div figure.galleryimg {
+    margin:0;
+    padding:0;
+}
+
+/*-----------------------Gallery Lazy Load--------------------------*/
+
+
+section.gallery figure {
+    width: 100%;
+    height: 0;
+    padding-bottom:55%; /* You define this doing image height / width * 100% */
+    position: relative;
+    margin:0;
+}
+section.gallery figure img.lazy {
+    width: 100%;
+    margin-bottom:50px;
+}
+
+/*-----------------------Footer Element----------------------------*/
+
+footer {
+    font-family: 'Fredericka the Great', cursive;;
+    margin:auto 0;
+    display: unset;
+    text-align: center;
+    padding:1rem;
+    width:100%;
+}
+footer.footer p.footertxt{
+    text-align:center;
+    background:rgba(220, 255, 220, 0.644);
+    padding:1rem;
+    margin:0 auto;
+    
+}
+
+
+
+
+/*--------------Keeps an element from collapsing-------------------*/
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear:both;
+}
+

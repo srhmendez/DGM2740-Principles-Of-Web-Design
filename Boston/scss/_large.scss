@@ -1,0 +1,68 @@
+
+/*    HEADER CSS RULES     */
+
+.logo {
+    margin-top:.5rem;
+    margin-bottom: 0;
+    padding-bottom:0;
+}
+
+
+
+
+/*    Navigation CSS RULES    */
+
+nav {
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#2c539e+0,0301ea+57,0301ea+57,0301ea+68,2c539e+100 */
+background: #2c539e; /* Old browsers */
+background: -moz-linear-gradient(left,  #2c539e 0%, #0301ea 57%, #0301ea 57%, #0301ea 68%, #2c539e 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  #2c539e 0%,#0301ea 57%,#0301ea 57%,#0301ea 68%,#2c539e 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  #2c539e 0%,#0301ea 57%,#0301ea 57%,#0301ea 68%,#2c539e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c539e', endColorstr='#2c539e',GradientType=1 ); /* IE6-9 */
+}
+
+nav ul.hide {
+    display: block;
+}
+nav ul li {
+    float: left;
+    width: 16.666667%;
+}
+nav ul li a {
+    border-right:.5px solid $transparentGrey;
+    padding:.4rem 0;
+}
+nav ul li a:hover{ 
+    background-color: $hovercolor;
+    color:$white;
+    padding: .4rem 0;
+    margin: 0rem;
+}
+nav button {
+    display:none;
+}
+    
+
+
+/*FOOTER CSS*/
+footer {
+    max-width: 60.5rem;
+}
+
+div.align {
+    height:13rem;
+    display:block;
+    text-decoration: none;
+    width:231px;
+
+
+}
+
+footer div.infogallery {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width:100%;
+    flex-basis: 25%;
+    margin:0 auto;
+}

@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Boston">
+<meta name="author" content="Sarah Mendez">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Boston 09</title>
+
+
+
+<!-- STYLE SHEETS -->
+<link href="../Boston/css/styles.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Courier+Prime:400,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+
+
+</head>
+
+<body>
+<div class="wrapper">
+<header>
+  <div class="titles">
+    <h1>Boston City</h1>
+    <h2>The Cradle of Liberty</h2>
+  </div>
+</header>
+
+<!--Navigation-->
+
+<nav class="clearfix">
+  <button onclick="toggleMenu()">&#9776;</button>
+  <ul id="primaryNav" class="hide">
+    <li><a class="active" href="#">Visit</a></li>
+    <li><a href="#">Department</a></li>
+    <li><a href="#">Services</a></li>
+    <li><a href="#">Pay Bills</a></li>
+    <li><a href="#">Meetings</a></li>
+    <li><a href="#">Help</a></li>
+  </ul>
+</nav>  
+
+<main>
+    <h1>Visit Boston!</h1>
+    <!--SLICK CAROUSEL-->
+    <div class="mySlider">
+      <div class="background">
+        <picture>
+        <source srcset="../Boston/images/Photo-1-Small.jpg" alt="boston"
+                media="(max-width: 28.12rem)">
+        <source srcset="../Boston/images/Photo-1.jpg" alt="boston" 
+                media="(min-width: 28.12rem)"> 
+        <img src="../Boston/images/Photo-4.jpg" alt="boston">
+        <div class="cap">
+          Boston Scenery is unlike that of any other scenery. 
+          Come visit our wonderful city full of surprises and interesting 
+          neighborhoods. You will not be dissappointed in the local culture,
+          the restaurants, the music scene, or our stunning historical sites.
+        </div>
+        </picture>
+        
+      </div>
+      <div class="background">
+        <picture>
+        <source srcset="../Boston/images/Photo-2-Small.jpg" alt="boston"
+                media="(max-width: 28.12rem)">
+        <source srcset="../Boston/images/Photo-2.jpg" alt="boston" 
+                media="(min-width: 28.12rem)"> 
+        <img src="../Boston/images/Photo-4.jpg" alt="boston">
+        <div class="cap">
+          Boston Scenery is unlike that of any other scenery. 
+          Come visit our wonderful city full of surprises and interesting 
+          neighborhoods. You will not be dissappointed in the local culture,
+          the restaurants, the music scene, or our stunning historical sites.
+        </div>
+        </picture>  
+        
+      </div>
+      <div class="background">
+        <picture>
+        <source srcset="../Boston/images/Photo-3-Small.jpg" alt="boston"
+                media="(max-width: 28.12rem)">
+        <source srcset="../Boston/images/Photo-3.jpg" alt="boston"
+                media="(min-width: 28.12rem)"> 
+        <img src="../Boston/images/Photo-4.jpg" alt="boston">
+        <div class="cap">
+          Boston Scenery is unlike that of any other scenery. 
+          Come visit our wonderful city full of surprises and interesting 
+          neighborhoods. You will not be dissappointed in the local culture,
+          the restaurants, the music scene, or our stunning historical sites.
+        </div>
+        </picture>
+        
+      </div>
+      <div class="background">
+        <picture>
+        <source srcset="../Boston/images/Photo-4-Small.jpg" alt="boston"
+                media="(max-width: 28.12rem)">
+        <source srcset="../Boston/images/Photo-4.jpg" alt="boston" 
+                media="(min-width: 28.12rem)"> 
+        <img src="../Boston/images/Photo-4.jpg" alt="boston">
+        <div class="cap">
+          Boston Scenery is unlike that of any other scenery. 
+          Come visit our wonderful city full of surprises and interesting 
+          neighborhoods. You will not be dissappointed in the local culture,
+          the restaurants, the music scene, or our stunning historical sites.
+        </div>
+        </picture>  
+      </div>
+
+    </div>
+    
+
+    
+</main>
+
+
+
+
+
+
+<footer>
+<div>
+  <h2 class="plan">Plan your next Visit</h2>
+</div>
+<div class="infogallery">
+
+<div class="align">
+  <a class="info">
+    <h4>PLACES TO STAY</h4>
+      <div class="icon">    <i class="fas fa-hotel"></i>    </div>
+  </a>
+</div>
+
+<div class="align">
+  <a class="info">
+    <h4>WALK THE RED LINE</h4>
+    <div class="icon">    <i class="fas fa-hiking">  </i>
+    </div>
+  </a>
+</div>
+
+<div class="align">
+  <a class="info">
+    <h4>PASS TO THE CITY</h4>
+    <div class="icon">    <i class="fas fa-key"></i>    </div>
+
+  </a>
+</div>
+
+<div class="align">
+  <a class="info">
+    <h4>FINE DINING</h4>
+    <div class="icon">    <i class="fas fa-cocktail"></i>    </div>
+  </a>
+</div>
+
+</div>
+</footer>
+</br>
+</br>
+<div class="footer">&copy; 2020 &bull; Sarah Mendez &bull; Utah Valley University &bull; Phone 123-456-7890</div>
+</div>
+
+
+<script src="../Boston/js/main.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+
+  $(document).ready(function(){
+    $('.mySlider').slick({
+    dots: true,
+    arrows:false,
+    infinite:true,
+    speed:1000,
+    cssEase:'ease-out',
+    autoplay:true,
+    autoplaySpeed:1000
+    })
+  });
+</script>
+<script src="../Boston/slick/slick.min.js" type="text/javascript"></script>
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+@import "normalize";
+
+@import "variables";
+
+@import "small";
+
+@import "../slick/slick-theme";
+
+@import "../slick/slick";
+
+@media only screen and (min-width: 560px) {
+    @import "medium";
+
+} /*End of the Medium Query*/
+
+@media only screen and (min-width: 1028px) {
+    @import "large";
+
+} /*End of the Medium Query*/ 

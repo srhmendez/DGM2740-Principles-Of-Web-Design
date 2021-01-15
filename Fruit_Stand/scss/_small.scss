@@ -1,0 +1,170 @@
+* {
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    width:100%
+}
+
+/* Body Rules */
+
+body {
+    font-family: Verdana;
+    font-size: 16px;
+    width:100%
+}
+
+/* Header Rules */
+
+header {
+    margin:0;
+    background-color: $lightorange;
+    display:grid;
+    grid-template-columns: 120px auto;
+    grid-auto-flow:row;
+    max-width: 71.25rem;
+
+
+}
+
+.logo {
+    padding:1rem;
+    padding-top:3rem;
+    padding-left:2rem;
+    margin-bottom:1.3rem;
+    box-sizing: 80%;
+    
+}
+
+header h1 {
+    font-family: 'Monoton', cursive;
+    font-size:100%;
+    margin: 0;
+    padding-top:4.8rem;
+    padding-bottom:0rem;
+    margin-bottom:0;
+    padding-left:2rem;
+    color: $orangered;
+
+}
+
+header h2 {
+    font-family: 'Courier Prime', monospace;   
+    font-size:100%; 
+    font-weight: 100;
+    color:$red;
+    padding-top:.3rem;
+    padding-left:2rem;
+    margin-top:0rem;
+
+}
+
+/* Navigation Rules */
+
+#navbox {
+    background-color: lighten($lightred, 10%);
+    max-width:1200px;
+    margin:0 auto;
+}
+nav {
+    font-family: 'Courier Prime', monospace;
+    background-color: lighten($lightred, 10%);
+    max-width: 71.25rem;
+    
+}
+
+nav ul {
+    margin: 0;
+    padding:0;
+    
+}
+
+nav li {
+    list-style-type: none;
+    list-style: none; 
+    background-color: lighten($lightred, 6%);
+
+}
+
+nav li.active { 
+    background-color: darken($lightred, 3%);
+    color: $white;
+    
+}
+
+nav a {
+    display: block;
+    padding: .8rem 0; /* 44 min height */
+    color: $red;
+    width:100%;
+    text-align: center;
+    text-decoration: none;
+
+}
+
+nav a:hover{ 
+    background-color: $hovercolor;
+}
+
+/* Main Rules */
+
+main { 
+    padding: 1rem 2%;
+    display: block; 
+    margin:0;
+    max-width: 71.25rem;
+}
+
+main h1 {
+    font-family: 'Courier Prime', monospace;
+    color: $orangered;
+}
+
+div.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 0;
+    padding:0;
+    width:98%;
+}
+div.gallery figure {
+    flex-basis:100%;
+    margin:1rem 2%;
+}
+div.gallery figure img {
+    width: 100%;
+}
+
+
+
+
+/* Footer Rules */
+
+footer {
+    font-family: 'Courier Prime', monospace;
+    text-align: center;
+    padding: 2rem 2%;
+    max-width: 71.25rem;
+    background-color:$lightyellow;
+    color:$red;
+    
+}
+
+
+
+
+
+
+
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+    
+}

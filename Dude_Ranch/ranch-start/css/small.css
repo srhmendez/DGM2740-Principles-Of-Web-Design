@@ -1,0 +1,111 @@
+* {
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+/* Body Rules */
+
+body {
+    font-family: Verdana;
+    font-size: 16px;
+}
+
+/* Header Rules */
+
+header {
+    background-color:lightsteelblue;
+    padding: 1rem 2%;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header h2 {
+    margin: 0;
+    font-weight: 100;
+}
+
+/* Navigation Rules */
+
+nav {
+    background-color: grey;
+    
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    list-style-type: none;
+    list-style: none;
+    
+}
+
+nav li.active { 
+    background-color: #333;
+}
+
+nav a {
+    display: block;
+    padding: .8rem 0; /* 44 min height */
+    color: #EEE;
+    text-align: center;
+    text-decoration: none;
+
+}
+
+nav a:hover{ 
+    background-color: #444;
+}
+
+/* Main Rules */
+
+main { 
+    padding: 1rem 2%;
+    display: block; 
+}
+
+main h1 {
+    color: rgb(119, 142, 172);
+}
+
+main figure img {
+    width: 100%;
+}
+
+main figure {
+    width: 100%;
+    margin: 0;
+}
+
+/* Footer Rules */
+
+footer {
+    text-align: center;
+    padding: 2rem 2%;
+    max-width: 100%;
+    background-color:lightsteelblue;
+    
+}
+
+
+
+
+
+
+
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
