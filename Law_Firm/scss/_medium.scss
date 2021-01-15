@@ -1,0 +1,43 @@
+header {
+    padding-bottom:30px;
+}
+
+div.background {
+    margin:2px;
+}
+
+
+
+figure.blogtext img {
+    margin: 0 8.6095px;  
+    margin-top:1rem;  
+    margin-bottom:.8rem;
+}
+
+figure.blogtext{
+    margin:0 auto;
+    max-width: 300px;
+}
+
+button.fix {
+    -webkit-appearance:none;
+    padding:10px;
+    background:$secondary-color;
+    border-radius:8px;
+    max-width:180px;
+}
+
+div.column.margin-2 {
+    background-color: $hover-orange;
+    margin-top:20px;
+
+}
+/*-------------------------------COLUMNS----------------------------*/
+div.column {
+    margin:0 auto;
+}
+
+@for $i from 1 through 12 {
+    $w:($i/12) * 100%;
+    .medium-#{$i}{flex-basis:$w;}
+}//End of loop

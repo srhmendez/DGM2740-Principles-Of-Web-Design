@@ -1,0 +1,538 @@
+html, body, main { 
+    background: $background;
+    margin:0 auto;
+    width:100vw;
+}
+
+
+div.wrapper header {
+    height:150px;
+    margin:0 auto;
+    max-width:1200px;
+}
+div.wrapper header img#logo {
+    max-width:1200px;
+    padding-top:4rem;
+    width:100%;
+    visibility: hidden;
+}
+div.wrapper header img#logoSmall {
+    margin-left:0rem;
+    margin-bottom:0rem;
+    max-width:100vw;
+}
+/*NAVIGATION*/
+
+nav {
+    margin:0 auto;
+    width: 100%;
+    max-width:1200px;
+    height:13rem;
+    padding-top:2rem;
+    background:$background;
+    display:flex;
+    justify-content: center;
+}
+nav ul {
+    width: 100%;
+    list-style-type: none;
+    margin:0;
+    padding:0;
+}
+nav ul div#alignRight {
+    justify-content: center;
+    height:13rem;
+    display:flex;
+    flex-direction: column;
+    width:100%;
+}
+nav ul div#alignRight li {
+    display:flex;
+    justify-content: center;
+}
+nav ul div#alignRight li a {
+    text-decoration: none;
+    height:3rem;
+    color:$menuGray;
+    text-transform: uppercase;
+    padding-left:0rem;
+    padding-right:1.5rem;
+    margin-top:1.2rem;
+    font-family: 'Lato', sans-serif;
+    font-size:1.7rem;
+    
+}
+nav ul div#alignRight li.active a {
+    color: $white;
+}
+li.active {
+    background-color: $menuGray;
+
+}
+nav ul div#alignRight li a i {
+    padding-right:.3rem;
+}
+
+
+/*Main CSS Rules */
+
+div#banner {
+    width:100vw;
+    margin:0 auto;
+    margin-top:0rem;
+    height: 169.73;
+
+}
+div#banner img {
+    width:100%
+}
+
+//DIV BLUE BANNER
+
+div#blueBanner {
+    background: rgb(17, 17, 24);
+    width:100vw;
+    margin-top:0rem;
+}
+div#bannerText {
+    margin:0 auto;
+    max-width:100vw;
+    display:grid;
+    grid-template-columns: 390px;
+    grid-template-rows: auto;
+}
+
+div#leftText, div#rightText {
+    color:white;
+    font-family: 'Lato', sans-serif;
+    padding-left:1vw;
+
+}
+
+div#leftText {
+    width:80vw;
+    padding-right:16vw;
+    padding-left:4vw;
+}
+div#leftText h1{
+    color:$yellow;
+    margin-bottom:.2rem;
+    margin-top:2rem;
+    font-weight: 800;
+    font-family: 'Poppins', sans-serif;
+}
+div#leftText p {
+    margin-top:.2rem;
+}
+div#leftText ul {
+    padding-left:5rem;
+}
+div#rightText h1.title {
+    color:$yellow;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom:.3rem;
+}
+div#rightText h1.success {
+    font-family: 'Poppins', sans-serif;
+    color:$yellow;
+    font-style: italic;
+    font-size:2.5rem;
+    margin-top:.4rem;
+
+}
+div#rightText {
+    text-align: right;
+    width:95vw;
+    padding-right:4vw;
+}
+div#rightText h3 {
+    margin:0;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+
+}
+///ABOUT US SECTION 
+
+div.about {
+    max-width:1200px;
+    width:100%;
+    margin:0 auto;
+}
+div.about h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: $teal;
+    margin-top:4.5rem;
+    margin-bottom:0rem;
+    padding-left:4vw;
+
+}
+hr.divider {
+    max-width:1200px;
+    margin-bottom:3rem;
+    margin-top:0;
+}
+
+//CSS GRID 
+
+div.imageGrid {
+    max-width:100vw;
+    margin:0 auto;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom:1rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+div.imageGrid p {
+    font-size:.8rem;
+    max-width:100%;
+    margin:0;
+    margin-bottom:0rem;
+}
+
+
+div.itemA {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    margin:0 auto;
+
+ figure {
+        max-width: 380px;
+        margin:0 auto;
+        
+        figcaption {
+            width: 92vw;
+            max-width: 380px;
+            padding:4vw;
+            h2 {
+                margin-bottom:.2rem;
+                margin-top:.5rem;
+                color:$teal;
+                font-weight: 400;
+                font-size:2rem;
+            }
+            p {
+                color: $menuGray;
+                line-height: 18px;
+            }
+        }
+        img {
+            width: 92vw;
+            max-width: 380px;
+            padding:4vw;
+        }
+    }
+}
+
+div.itemB {
+    max-width: 380px;
+    margin:0 auto;
+
+    figure {
+        width:100%;
+        margin:0;
+        figcaption {
+            width: 92vw;
+            max-width: 380px;
+            padding:4vw;
+
+            h2 {
+                margin-bottom:.2rem;
+                margin-top:.5rem;
+                color:$teal;
+                font-weight: 400;
+                font-size:2rem;
+            }
+            p {
+                color: $menuGray;
+                line-height: 18px;
+            }
+        }
+        img {
+            width: 92vw;
+            max-width: 380px;
+            padding:4vw;
+        }
+    }
+}
+div.itemC {
+    max-width: 380px;
+    margin:0 auto;
+
+    figure {
+        width:100%;
+        margin:0;
+        figcaption {
+            width: 92vw;
+            max-width: 380px;
+            padding:4vw;
+
+            h2 {
+                margin-bottom:.2rem;
+                margin-top:.5rem;
+                color:$teal;
+                font-weight: 400;
+                font-size:2rem;
+            }
+            p {
+                color: $menuGray;
+                line-height: 18px;
+            }
+        }
+        img {
+            width: 92vw;
+            max-width: 380px;
+            padding:4vw;
+        }
+    }
+}   
+div.itemD {
+    max-width: 380px;
+    margin:0 auto;
+    figure {
+        width:100vw;
+        margin:0;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        figcaption {
+            width: 92vw;
+            max-width: 380px;
+            padding:4vw;
+            h2 {
+                margin-bottom:.3rem;
+                margin-top:.5rem;
+                color:$teal;
+                font-weight: 400;
+                font-size:2rem;
+            }
+            p {
+                color: $menuGray;
+                line-height: 18px;
+                padding-bottom:0rem;
+            }
+        }
+        img {
+            width: 92vw;
+            max-width: 380px;
+            padding:4vw;
+
+        }
+    }
+}
+
+div.imageGrid2 {
+    max-width:100vw;
+    margin:0 auto;
+    display:grid;
+    grid-template-columns: 1fr;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom:1rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+div {
+        width:100vw;
+        padding:0;
+        margin:0;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+div.imageGrid2 div figure.figure1 {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        margin:0 auto;
+        margin-top:3rem;
+        max-width:375px;
+        width:100vw;
+        figcaption {
+            width: 92vw;
+            max-width: 370px;
+            padding:4vw 4vw;
+            h2 {
+                margin-bottom:.3rem;
+                margin-top:1.5rem;
+                color:$teal;
+                font-weight: 400;
+                font-size:2rem;
+            }
+            p {
+                color: $menuGray;
+                line-height: 18px;
+            }
+        }
+        img {
+            max-width:375px;
+            width: 100vw;
+        }
+    }
+    
+
+
+div.imageGrid2 div figure.figure2 {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        margin:0 auto;
+        margin-top:3rem;
+        max-width:375px;
+        width:100vw;
+        figcaption {
+            width: 92vw;
+            max-width: 370px;
+            padding:4vw 4vw;
+            h2 {
+                margin-bottom:.3rem;
+                margin-top:1.5rem;
+                color:$teal;
+                font-weight: 400;
+                font-size:2rem;
+            }
+            p {
+                color: $menuGray;
+                line-height: 18px;
+            }
+        }
+        img {
+            max-width:375px;
+            width: 100vw;
+        }
+    }
+
+div.imageSpan {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 6;
+    grid-row-end: 6;
+    background:white;
+    max-width:375px;
+    margin:0 auto;
+}
+    
+figure.figure3 {
+        margin:0 auto;
+     
+        img {
+            width: 100%;
+            margin:0 auto;
+            }
+        figcaption {
+            h2 {
+                margin-bottom:.3rem;
+                margin-top:1.5rem;
+                color:$teal;
+                font-weight: 400;
+                font-size:2rem;
+            }
+            p {
+                color: $menuGray;
+                line-height: 18px;
+            }
+        }
+    }
+
+div.imageSpan figure.figure3 {
+    width:100vw;
+    max-width:375px;
+    margin:0;
+    margin-bottom:1rem;
+}
+div.imageSpan figure.figure3 figcaption {
+    background:white;
+    margin:0 auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+
+    p {
+        color: $menuGray;
+        line-height: 18px;
+        width:100%;
+        text-align: center;
+        padding-top:20px;
+    }
+}
+div.imageSpan figure.figure3 figcaption button.pricing {
+    background-image: linear-gradient($gradientStart, $gradientEnd);
+    border-radius: 12px;
+    font-size:1.3rem;
+    color:white;
+    padding:15px 30px;
+    margin:0 auto;
+}
+div.spanItem {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 7;
+    grid-row-end: 7;
+    margin:0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+
+        p {
+            color: $menuGray;
+            line-height: 18px;
+            margin:0 auto;
+            padding-top:.8rem;
+            width:98%;
+        }
+    }
+
+
+div.spanItem p{
+    color: $menuGray;
+    line-height: 18px;
+    padding-top:.8rem;
+    padding-left: 4vw;
+    padding-right:4vw;
+    max-width:330px;
+    margin-bottom:4rem;
+}
+div.spanItem h2 {
+    margin:0 auto;
+    max-width:330px;
+    margin-top:2rem;
+    color: $teal;
+    width:92vw;
+    padding-left:4vw;
+    padding-right:4vw;
+}
+
+div.sponsers {
+    max-width:1200px;
+    margin-top:4rem;
+    width:100vw;
+    display:flex;
+    flex-direction: column;
+    margin: 0 auto;
+    background:$white;
+    img {
+        width:100vw;
+    }
+}
+
+footer {
+    width:100vw;
+    background-image: linear-gradient($teal, $gradientEnd);
+    height:4rem;
+    margin-bottom:4rem;
+    padding:0;
+    p {
+        color:white;
+        font-family: 'Poppins', sans-serif;
+        max-width:1200px;
+        margin:0 auto;
+        padding: 1.4rem 1rem;
+    }
+}

@@ -1,0 +1,35 @@
+html {
+    width:100vw;
+}
+body{max-width: 1200px;
+    margin:0 auto;}
+div#wrapper {
+    width:100vw;
+    max-width:1200px;
+    margin: 0 auto;
+}
+header {
+    height:200px;
+    background:$mint;
+    padding:0;
+    margin:0;
+    width:100vw;
+    max-width:1200px;
+}
+nav#bar {
+        margin:0 auto;}
+nav#bar ul#navitems {
+    margin:0 auto;
+}
+
+main {
+    max-width:1200px;
+    div#hotels {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+main h1 {
+    text-align:left;
+    padding-left:30px;
+    max-width:1130px;
+}

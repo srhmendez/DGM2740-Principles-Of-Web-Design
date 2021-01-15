@@ -1,0 +1,42 @@
+
+    #herobackground {
+        background-image: url(../images/headerRepeat.png);
+        background-position: center;
+        background-repeat: repeat;
+        margin: auto;
+        height:376px;
+    }
+    #heroforeground {
+        background-image: url(../images/headerLarge.jpg);
+        height:376px;
+        background-repeat: no-repeat;
+        margin:auto;
+        background-position: center;
+    }
+    #herobackground h1 {
+        max-width:1024px;
+        margin:auto;
+        padding-left:.5rem;
+    }
+    #herobackground h2 {
+        max-width:1024px;
+        margin:auto;
+        padding-left:.5rem;
+    }
+    nav {
+        max-width: 100%;
+        display:flex;
+
+    }
+    nav ul#navlist{
+        max-width:1024px;
+        margin:auto;  
+    }
+    nav ul li {
+        float: left;
+        background-color: #ffedcc;
+        padding:10px;
+        margin-bottom:0px;
+        margin-left:0;
+        width: 1%;  
+    }

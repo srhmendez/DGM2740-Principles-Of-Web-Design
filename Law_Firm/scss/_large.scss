@@ -1,0 +1,190 @@
+/*-------------------------------Header----------------------------*/
+body#wrapper {
+    margin:0 auto;
+}
+
+div.search {
+    margin-right:10px;
+    
+}
+
+/*-------------------------------Navigation----------------------------*/
+
+nav {
+    max-width:75rem;
+    height:35px;
+}
+nav ul {
+    display:flex;
+    padding:10px;
+    height:40px;
+}
+nav ul li {
+    max-width:70px;
+    padding:10px;
+    padding-bottom:25px;
+    border:none;
+}
+li.active {
+    height:1px;
+}
+
+
+/*-------------------------------Main----------------------------*/
+
+button.readmore {
+    visibility: visible;
+    border-radius:8px;
+    background:$secondary-color;
+    color:$white;
+    padding-left:10px;
+    padding-right:10px;
+    padding-top:5px;
+    padding-bottom:5px;
+    margin:0 auto;
+    margin-top:1rem;
+    width:290px;
+}
+
+.large-0 {
+    visibility: hidden;
+    max-width:0;
+}
+
+.margin {
+    margin:0;
+}
+div.rows.lawyers {
+    margin:0;
+    justify-content: center;
+}
+main figure {
+    max-width:200px;
+    margin: 0px;
+    display: inline-block;
+    // margin-inline-start: 0;
+    // margin-inline-end: 0;
+    // margin-block-start: 0;
+    // margin-block-end: 0;
+}
+
+figure img {
+    max-width:180px;
+    margin-left:10px;
+    margin-right:10px;
+    padding-bottom:1rem;
+}
+
+figure img.large-size {
+    max-width:290px;
+}
+
+h3.name {
+    font-size: 12px;
+    width:100%;
+}
+section#biography {
+    margin-bottom:2rem;
+}
+div.rows div.margin {
+    margin: 0;
+}
+div.column {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    margin:0;
+    padding:0;
+}
+div.column.color {
+    background-color: $hover-orange;
+    margin-top:1.5rem;
+    padding-bottom:2rem;
+
+}
+
+button.learn {
+    padding:2px;
+    padding-left:3px;
+    padding-right:3px;
+}
+figure.blogtext {
+    padding: 0px;
+    margin: 0 auto;
+    max-width:290px;
+    margin-top:2rem;
+}
+div.margin-3 {
+    display:flex;
+    justify-content: center;
+    margin-bottom:3rem;
+    margin:10px;
+}
+div.background {
+    background: $hover-orange;
+    margin:.3vw;
+    padding:10px;
+}
+div.tipblock {
+    padding:10px;
+    height:208.812px;
+    margin-top:5px;
+}
+div.tip {
+    margin:0;
+}
+div.faq {
+    margin:0;
+}
+div.icons {
+    padding-top:2rem;
+}
+section.buttons {
+    padding-top:40px;
+    padding-bottom:40px;
+}
+
+div.button {
+    display:flex;
+    justify-content: center;
+    border-radius:8px;
+    margin-bottom:0;
+}
+div.readmore {
+    background: lighten($color: $hover-orange, $amount: 90)
+
+}
+button.fix {
+    -webkit-appearance:none;
+    padding:10px;
+    background:$secondary-color;
+    border-radius:8px;
+    max-width:180px;
+    margin:0 auto;
+}
+footer {
+    margin-top:3rem;
+}
+div.icon a{
+    font-size:2rem;
+}
+h2.blogtext {
+    margin-bottom:0;
+}
+p.blogtext {
+    margin: 0 0;
+}
+div.margin-3 {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+div.search {
+    padding:5px 5px;
+}
+/*-------------------------------COLUMNS----------------------------*/
+
+@for $i from 1 through 12 {
+    $w:($i/12) * 100%;
+    .large-#{$i}{flex-basis:$w;}
+}//End of loop

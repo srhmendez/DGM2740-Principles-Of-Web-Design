@@ -1,0 +1,254 @@
+/*-------------------------------HEADER----------------------------*/
+html {
+    margin: 0 auto;
+}
+body, main {
+    display:block;
+    margin:0 auto;
+}
+header, main, footer {
+    margin:0;
+    padding:0
+}
+div.headercolor {
+    width: $header-width;
+    color:$primary-color;
+}
+header {
+    margin:0;
+    padding:0;
+    background-color:$primary-color;
+    padding-bottom:.6rem;
+}
+h1.hero, h4.hero {
+    color:$title-color;
+    margin:0;
+    padding-top:1rem;
+    padding-left:1rem;
+    font-family: $font;
+}
+h1.hero {
+    padding-top:4rem;
+}
+h4.hero {
+    font-size:1.3rem;
+    padding-top:0;
+}
+
+div.searchcontainer {
+    width:100%;
+    display:flex;
+}
+div.search {
+    height:.8rem;
+    color:$secondary-color;
+    border: solid $secondary-color 1px;
+    background:$white;
+    margin-top:2rem;
+    padding:5px;
+    padding-bottom:8px;
+    padding-left:10px;
+    margin-right:$gutter;
+    font-family:$font;
+}
+/*-------------------------------NAVIGATION-------------------------*/
+div.wrapper {
+    margin:0 auto;
+    max-width:75rem;
+}
+
+nav{
+    background-color:$tertiary-color;
+}
+nav ul#navlist {
+    list-style-type: none;
+    margin:0 auto;
+    padding:0;
+    margin-bottom:1rem;
+}
+nav ul li {
+    width:96%;
+    text-align: center;
+    padding:2%;
+    color:$white;
+    border: $secondary-color 1px solid;
+    font-family:$font;
+}
+nav ul li.active {
+    background: $hover-orange;
+    color:$secondary-color;
+}
+/*-------------------------------MAIN-------------------------------*/
+main div.row div.column figure img{
+    width:100%;
+}
+main {
+    max-width:75rem;
+}
+main h2 {
+    font-family:$font;
+}
+main figure {
+    margin:auto;
+}
+main button.learn {
+    border-radius:8px;
+    border:solid $secondary-color 1px;
+    background: $primary-color;
+    color:$white;
+    min-width:50%;
+    margin:25%;
+    margin-top:.7rem;
+    margin-bottom:1.2rem;
+    padding-top:.2rem;
+    padding-bottom:.2rem;
+}
+main h3.name {
+    margin-top:2rem;
+    margin-bottom:.3rem;
+    text-align: center;
+    font-size:1.6rem;
+    font-family:$font;
+}
+
+div.button {
+    display:flex;
+    justify-content: center;
+    
+}
+div.button button h2 {
+    color:$white;
+    text-align: center;
+    font-family:$font;
+    padding-left: 5px;
+    padding-right: 5px;
+
+}
+div.button {
+    list-style-type: none;
+    background:$secondary-color;
+    border-radius:8px;
+}
+
+section.buttons {
+    padding-top:2rem;
+    padding-bottom:2rem;
+    background: $hover-orange;
+}
+button.readmore {
+    visibility: hidden;
+}
+figcaption {
+    background-color: lighten($color: $hover-orange, $amount: 10);
+    padding:5px;
+}
+figcaption p {
+    padding:10px;
+}
+figure.blogtext {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    max-width:300px;
+    padding:5px;
+    
+}
+figure.blogtext img.large-size {
+    margin: 0 8.6095px;  
+    margin-top:1rem;  
+    margin-bottom:.8rem;
+}
+
+figure.blogtext{
+    margin:0 auto;
+    max-width: 300px;
+}
+h2.blogtext {
+    padding-left:15px;
+}
+p.blogtext {
+    padding:20px;
+}
+figure.blogtext img {
+    margin: 0 8.6095px;  
+    margin-top:3rem;  
+}
+div.tip a{
+    margin-top:1rem;
+    margin-bottom: .5rem;
+    
+}
+section.blogposts {
+    margin-bottom:1rem;
+}
+
+main p {
+    font-family:$font;
+}
+div.background {
+    background:$primary-color;
+    padding: 2px 0;
+    margin: 10px 0;
+}
+
+button.fix {
+    -webkit-appearance:none;
+    padding:10px;
+    background:$secondary-color;
+    border-radius:8px;
+    max-width:180px;
+    color:$white;
+}
+
+div.column.margin-2 {
+    background-color: $hover-orange;
+    margin-top:20px;
+
+}
+/*-------------------------------FOOTER----------------------------*/
+footer {
+    background-color: $hover-orange;
+    height:200px;
+    padding-top:4rem;
+    margin-top:2rem;
+    max-width: 75rem;
+}
+div.icons {
+    display:flex;
+}
+div.icon a:hover {
+    color:darken($color: $hover-orange, $amount: 90)
+}
+div.icon {
+    text-align:center;
+}
+div.icon a {
+    text-align: center;
+    font-size:3rem;
+    color:$secondary-color;
+}
+
+
+/*-------------------------------COLUMNS----------------------------*/
+div.rows{
+    display:flex;
+    flex-wrap:wrap;
+}//End of parent
+
+div.lawyers {
+    margin:$gutter;
+    justify-content: center;
+}
+
+.margin {
+    margin:$gutter;
+}
+.margin-2 {
+    margin-top:$gutter;
+    margin-bottom:$gutter;
+}
+
+@for $i from 1 through 12 {
+    $w:($i/12) * 100%;
+    .small-#{$i}{flex-basis:$w;}
+}//End of loop

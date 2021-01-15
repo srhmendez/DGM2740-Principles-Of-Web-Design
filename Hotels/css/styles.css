@@ -1,0 +1,228 @@
+/*Navigation Colors*/
+html {
+  margin: 0 auto;
+  padding: 0;
+  width: 100%; }
+
+div#wrapper {
+  margin: 0 auto;
+  padding: 0; }
+
+body {
+  margin: 0;
+  padding: 0; }
+
+/* Header */
+header {
+  height: 265px;
+  background: #cbf1cb;
+  padding: 0;
+  margin: 0; }
+
+header h1 {
+  padding-top: 4rem;
+  padding-left: 1rem;
+  margin-top: 0;
+  font-size: 3.4rem;
+  color: #007599;
+  margin-bottom: 0;
+  font-family: 'Manrope', sans-serif; }
+
+header h2 {
+  padding-top: 0rem;
+  margin-top: .5rem;
+  padding-left: 1rem;
+  font-size: 1.6rem;
+  color: #2a922a;
+  font-family: 'Manrope', sans-serif; }
+
+/* Navigation */
+nav#bar {
+  position: fixed;
+  width: 100%;
+  max-width: 100vw;
+  bottom: 0;
+  background: #cbf1cb;
+  z-index: 999;
+  padding: 0;
+  margin: 0;
+  height: 5rem;
+  left: 0;
+  height: 6.1rem; }
+
+nav#bar ul#navitems {
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  width: 100%;
+  margin: 0;
+  padding: 0; }
+
+nav#bar ul#navitems li {
+  background: #cbf1cb;
+  width: 100%;
+  list-style-type: none;
+  height: 6rem;
+  padding: 1rem 2rem; }
+
+nav#bar ul#navitems li a {
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+  font-style: normal;
+  text-decoration: none;
+  text-align: center;
+  color: #134313;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem; }
+
+nav#bar ul#navitems li a i.icon.ion-md-pin {
+  color: #2a912a;
+  font-size: 3rem; }
+
+nav#bar ul#navitems li a i.icon.ion-md-checkmark {
+  color: #2a912a;
+  font-size: 3rem; }
+
+nav#bar ul#navitems li a i.icon.ion-md-bed {
+  color: #2a912a;
+  font-size: 3rem; }
+
+nav#bar ul#navitems li.active {
+  background: #a3e6a3; }
+
+/* Main*/
+main {
+  height: 100vw; }
+
+main h1 {
+  color: #2a922a;
+  padding: 0 0rem;
+  padding-top: 3rem;
+  margin-top: 0rem;
+  width: 100%;
+  text-align: center;
+  font-family: 'Manrope', sans-serif; }
+
+div#hotels {
+  padding: 2%;
+  width: 96%;
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: auto 0;
+  margin-bottom: 6rem;
+  background: #b4ffcd; }
+
+div#hotels figure.polaroid {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
+  width: 96%;
+  margin-top: 2rem;
+  margin-bottom: 0;
+  background: rgba(255, 255, 255, 0.712); }
+
+div#hotels figure.polaroid img {
+  width: 100%;
+  margin: 0 auto; }
+
+div#hotels figure.polaroid figcaption {
+  position: absolute;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.6);
+  width: 100%;
+  padding: .5rem 0;
+  font-size: 1.8rem;
+  text-align: center;
+  font-family: 'Manrope', sans-serif; }
+
+div.child {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: rgba(255, 255, 255, 0.712);
+  padding-left: .5rem;
+  padding-right: .5rem;
+  margin-top: .5rem; }
+
+div.child span {
+  display: flex; }
+
+div.child span i {
+  padding-top: 1rem;
+  font-size: 2rem;
+  padding-right: 2%; }
+
+div below span i {
+  float: left;
+  font-size: 1.5rem;
+  width: 96vw; }
+
+span p.phoneNumber {
+  padding-top: .7rem; }
+
+span i.ion-md-car {
+  margin-right: .5rem;
+  color: #2a912a; }
+
+span i.ion-md-call {
+  margin-right: .5rem;
+  color: #2a912a; }
+
+span.spanRight {
+  padding-left: 1rem; }
+
+span.spanLeft {
+  padding-left: 1rem; }
+
+div.container {
+  background: rgba(255, 255, 255, 0.712); }
+
+div.address {
+  display: flex;
+  flex-direction: column;
+  padding: .3rem; }
+
+div.address p {
+  margin: .1rem; }
+
+/* Footer */
+@media only screen and (min-width: 35rem) {
+  html {
+    width: 100vw; }
+
+  body {
+    max-width: 1200px;
+    margin: 0 auto; }
+
+  div#wrapper {
+    width: 100vw;
+    max-width: 1200px;
+    margin: 0 auto; }
+
+  header {
+    height: 200px;
+    background: #cbf1cb;
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    max-width: 1200px; }
+
+  nav#bar {
+    margin: 0 auto; }
+
+  nav#bar ul#navitems {
+    margin: 0 auto; }
+
+  main {
+    max-width: 1200px; }
+    main div#hotels {
+      grid-template-columns: 1fr 1fr; }
+
+  main h1 {
+    text-align: left;
+    padding-left: 30px;
+    max-width: 1130px; } }
+/*End of the Medium Query*/
+/*End of the Medium Query*/

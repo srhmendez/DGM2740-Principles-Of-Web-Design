@@ -1,0 +1,121 @@
+html {
+    background-color: #ffedcc;
+}
+#herobackground {
+    background-image: url(../images/smallheader.jpg);
+    height: 205px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+header {
+    background-color: #ffedcc;
+    margin:auto 0;
+    width:100%;
+}
+#herobackground h1 {
+    margin:auto;
+    padding-top:2rem;
+    margin-left:5%;
+    font-family: 'Nanum Myeongjo', serif;
+}
+#herobackground h2 {
+    max-width: 1024px;
+    margin: auto;
+    margin-bottom:3rem;
+    margin-left:5%;
+    font-family: 'Nanum Myeongjo', serif;
+}
+ /* End of Header Section Tag */
+
+nav{
+    display:flex;
+    margin:0px;
+    background-color: #ffedcc;
+    height:2.4rem;  
+    width:100%;
+
+    
+}
+nav ul#navlist {
+    width:100%;
+    list-style-type: none;
+    display: block;
+    padding:0;
+    margin:0;
+}
+
+nav ul#navlist li {
+    float: left;
+    background-color: #ffedcc;
+    margin-bottom:0px;
+    margin-left:0;
+    width:20%;
+    padding-top:10px;
+    padding-left:5%;
+    font-family: 'Nanum Myeongjo', serif;
+    font-weight: 700;
+  
+}
+nav ul#navlist li.active{
+    background-color:rgb(255, 209, 193);
+    height:72%;
+    
+}
+    /* End of Navigation Section Tag */
+
+body {
+    margin:auto;
+    padding:0;
+    background-color:white;
+}
+
+main {
+    margin:auto;
+    max-width:1024px;
+
+}
+.bearicon{
+    animation-name: bear;
+    animation-duration: 4s;
+    animation-delay: 0s;
+    position: relative;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bear {
+    0% {left: 0px;}
+    25% {left: 250px}
+    50% {left:450px;}
+    75% {left:900px;}
+    100% {left:0px;}
+}
+main h1 {
+    margin-top:4rem;
+} 
+h1, h2, p{
+    margin-left:5%;
+    
+    
+}
+h1, h2 {
+    font-family: 'Nanum Myeongjo', serif;
+    
+}
+p {
+    margin-right:5%;
+    font-family: 'Tajawal', sans-serif;
+}
+
+footer {
+    background-color:#ffedcc;
+    padding:0px;
+    width: 100%;
+    font-weight: 700;
+    margin:0;
+
+}
+footer #footertext{
+    text-align: center;
+    padding-bottom:5rem;
+    padding-top:2rem;
+}

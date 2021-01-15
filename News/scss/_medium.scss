@@ -1,0 +1,52 @@
+
+
+.logo {
+    padding:3rem;
+
+}
+nav {
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#2c539e+0,0301ea+57,0301ea+57,0301ea+68,2c539e+100 */
+    background: #2c539e; /* Old browsers */
+    background: -moz-linear-gradient(left,  #2c539e 0%, #0301ea 57%, #0301ea 57%, #0301ea 68%, #2c539e 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  #2c539e 0%,#0301ea 57%,#0301ea 57%,#0301ea 68%,#2c539e 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  #2c539e 0%,#0301ea 57%,#0301ea 57%,#0301ea 68%,#2c539e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c539e', endColorstr='#2c539e',GradientType=1 ); /* IE6-9 */
+
+}
+nav ul.hide {
+    display: block;
+}
+nav ul li {
+    float: left;
+    width: 25%;
+}
+nav ul li a {
+    border-right:.5px solid $transparentGrey;
+
+}
+nav ul li a:hover{ 
+    background-color: $hovercolor;
+    color:$white;
+    padding: .4rem 0;
+    margin: 0rem;
+}
+nav button {
+    display:none;
+}
+
+    /*FOOTER GRID CSS*/
+
+    footer div.infogallery {
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-gap:20px;
+    }
+    
+    div.info {
+        width:50%;
+        text-align: start;
+        margin:0 auto;
+    }
+    
+    //End of Grid

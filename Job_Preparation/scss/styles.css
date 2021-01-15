@@ -1,0 +1,1095 @@
+/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+body {
+  margin: 0; }
+
+/**
+ * Add the correct display in IE 9-.
+ */
+article,
+aside,
+header,
+nav,
+section {
+  display: block; }
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in IE.
+ */
+figcaption,
+figure,
+main {
+  /* 1 */
+  display: block; }
+
+/**
+ * Add the correct margin in IE 8.
+ */
+figure {
+  margin: 1em 40px; }
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */ }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+a {
+  background-color: transparent;
+  /* 1 */
+  -webkit-text-decoration-skip: objects;
+  /* 2 */ }
+
+/**
+ * 1. Remove the bottom border in Chrome 57- and Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */ }
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+b,
+strong {
+  font-weight: inherit; }
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder; }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+dfn {
+  font-style: italic; }
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+mark {
+  background-color: #ff0;
+  color: #000; }
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+audio,
+video {
+  display: inline-block; }
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+img {
+  border-style: none; }
+
+/**
+ * Hide the overflow in IE.
+ */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: sans-serif;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */ }
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible; }
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none; }
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */ }
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em; }
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */ }
+
+/**
+ * 1. Add the correct display in IE 9-.
+ * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */ }
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */ }
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */ }
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ */
+details,
+menu {
+  display: block; }
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item; }
+
+/* Scripting
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+canvas {
+  display: inline-block; }
+
+/**
+ * Add the correct display in IE.
+ */
+template {
+  display: none; }
+
+/* Hidden
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10-.
+ */
+[hidden] {
+  display: none; }
+
+/*Navigation Colors*/
+html, body, main {
+  background: #f9f9f9;
+  margin: 0 auto; }
+
+div.wrapper header {
+  height: 90px;
+  margin: 0 auto;
+  max-width: 1200px; }
+
+div.wrapper header img#logo {
+  max-width: 1200px;
+  width: 100%; }
+
+/*NAVIGATION*/
+nav {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+  height: 1rem;
+  background: #f9f9f9;
+  display: flex;
+  justify-content: right; }
+
+nav ul {
+  width: 100%;
+  list-style-type: none;
+  height: 1rem;
+  margin: 0;
+  padding: 0; }
+
+nav ul div#alignRight {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%; }
+
+nav ul div#alignRight li a {
+  text-decoration: none;
+  color: #999999;
+  text-transform: uppercase;
+  padding-left: .5rem;
+  padding-right: 1rem;
+  font-family: 'Lato', sans-serif; }
+
+nav ul div#alignRight li a i {
+  padding-right: .3rem; }
+
+/*Main CSS Rules */
+div#banner {
+  width: 1200px;
+  margin: 0 auto;
+  margin-top: .5rem; }
+
+div#banner img {
+  width: 100%; }
+
+div#blueBanner {
+  background: #111118;
+  width: 100vw;
+  margin-top: 1rem;
+  padding-bottom: 2rem; }
+
+div#bannerText {
+  margin: 0 auto;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: 800px 400px; }
+
+div#leftText, div#rightText {
+  color: white;
+  font-family: 'Lato', sans-serif; }
+
+div#leftText {
+  padding-right: 4rem; }
+
+div#leftText h1 {
+  color: #fdd831;
+  margin-bottom: .2rem;
+  font-weight: 800;
+  font-family: 'Poppins', sans-serif; }
+
+div#leftText p {
+  margin-top: .2rem; }
+
+div#leftText ul {
+  padding-left: 5rem; }
+
+div#rightText h1.title {
+  color: #fdd831;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: .3rem; }
+
+div#rightText h1.success {
+  font-family: 'Poppins', sans-serif;
+  color: #fdd831;
+  font-style: italic;
+  font-size: 2.5rem;
+  margin-top: .4rem; }
+
+div#rightText {
+  text-align: right; }
+
+div#rightText h3 {
+  margin: 0;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif; }
+
+div.about {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto; }
+
+div.about h1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  color: #0480b1;
+  margin-top: 4.5rem;
+  margin-bottom: 0rem; }
+
+hr.divider {
+  max-width: 1200px;
+  margin-bottom: 3rem;
+  margin-top: 0; }
+
+div.imageGrid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 300px 300px 300px 300px;
+  grid-template-rows: 488px 400px 150px;
+  column-gap: 10px;
+  row-gap: 2rem;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 1.4rem; }
+
+div.imageGrid p {
+  font-size: .8rem;
+  max-width: 100%;
+  margin: 0; }
+
+div.itemA {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 1; }
+  div.itemA figure {
+    width: 100%;
+    margin: 0; }
+    div.itemA figure figcaption {
+      max-width: 277.5px; }
+      div.itemA figure figcaption h2 {
+        margin-bottom: .2rem;
+        margin-top: 1.5rem;
+        color: #0480b1;
+        font-weight: 400;
+        font-size: 2rem; }
+      div.itemA figure figcaption p {
+        color: #999999;
+        line-height: 18px; }
+    div.itemA figure img {
+      width: 100%;
+      max-width: 277.5px; }
+
+div.itemB {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 1; }
+  div.itemB figure {
+    width: 100%;
+    margin: 0; }
+    div.itemB figure figcaption {
+      max-width: 277.5px; }
+      div.itemB figure figcaption h2 {
+        margin-bottom: .2rem;
+        margin-top: 1.5rem;
+        color: #0480b1;
+        font-weight: 400;
+        font-size: 2rem; }
+      div.itemB figure figcaption p {
+        color: #999999;
+        line-height: 18px; }
+    div.itemB figure img {
+      width: 100%;
+      max-width: 277.5px; }
+
+div.itemC {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 1; }
+  div.itemC figure {
+    width: 100%;
+    margin: 0; }
+    div.itemC figure figcaption {
+      max-width: 277.5px; }
+      div.itemC figure figcaption h2 {
+        margin-bottom: .2rem;
+        margin-top: 1.5rem;
+        color: #0480b1;
+        font-weight: 400;
+        font-size: 2rem; }
+      div.itemC figure figcaption p {
+        color: #999999;
+        line-height: 18px; }
+    div.itemC figure img {
+      width: 100%;
+      max-width: 277.5px; }
+
+div.itemD {
+  grid-column-start: 4;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 1; }
+  div.itemD figure {
+    width: 100%;
+    margin: 0; }
+    div.itemD figure figcaption {
+      max-width: 277.5px; }
+      div.itemD figure figcaption h2 {
+        margin-bottom: .3rem;
+        margin-top: 1.5rem;
+        color: #0480b1;
+        font-weight: 400;
+        font-size: 2rem; }
+      div.itemD figure figcaption p {
+        color: #999999;
+        line-height: 18px; }
+    div.itemD figure img {
+      width: 100%;
+      max-width: 277.5px; }
+
+div.itemE {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 2;
+  display: flex;
+  flex-basis: 33.33%;
+  max-width: 1200px;
+  padding-top: 1.5rem;
+  border-top: #999999 1px solid; }
+  div.itemE figure.figure1 {
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 25px;
+    max-width: 375px; }
+    div.itemE figure.figure1 figcaption {
+      width: 100%; }
+      div.itemE figure.figure1 figcaption h2 {
+        margin-bottom: .3rem;
+        margin-top: 1.5rem;
+        color: #0480b1;
+        font-weight: 400;
+        font-size: 2rem; }
+      div.itemE figure.figure1 figcaption p {
+        color: #999999;
+        line-height: 18px; }
+    div.itemE figure.figure1 img {
+      width: 100%; }
+  div.itemE figure.figure2 {
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 25px;
+    max-width: 375px; }
+    div.itemE figure.figure2 figcaption {
+      width: 100%; }
+      div.itemE figure.figure2 figcaption h2 {
+        margin-bottom: .3rem;
+        margin-top: 1.5rem;
+        color: #0480b1;
+        font-weight: 400;
+        font-size: 2rem; }
+      div.itemE figure.figure2 figcaption p {
+        color: #999999;
+        line-height: 18px; }
+    div.itemE figure.figure2 img {
+      width: 100%; }
+  div.itemE figure.figure3 {
+    grid-column: 1;
+    grid-row: 2 / span 2;
+    margin: 0;
+    max-width: 400px;
+    background: white; }
+    div.itemE figure.figure3 figcaption {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background: white;
+      z-index: 999; }
+      div.itemE figure.figure3 figcaption button.pricing {
+        border-radius: 18px;
+        background-image: linear-gradient(#0480b1, #01486d);
+        color: white;
+        padding: .4rem;
+        font-size: 1.7rem;
+        font-weight: 400;
+        padding-right: 10px;
+        padding-left: 10px;
+        width: 290px;
+        margin: 0 auto;
+        margin-top: 0;
+        padding-top: 0; }
+      div.itemE figure.figure3 figcaption p {
+        color: #999999;
+        line-height: 18px;
+        margin: 0 auto;
+        padding-top: .8rem; }
+    div.itemE figure.figure3 img {
+      margin: 0;
+      padding: 0;
+      width: 400px;
+      margin-bottom: 0;
+      padding-bottom: 0; }
+
+div.spanItem {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  padding-top: 70%; }
+  div.spanItem h2 {
+    margin-bottom: .3rem;
+    margin-top: 1.5rem;
+    color: #0480b1;
+    font-weight: 400;
+    font-size: 2rem; }
+  div.spanItem p {
+    color: #999999;
+    line-height: 18px; }
+
+div.sponsers {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+  background: white; }
+
+footer {
+  width: 100%;
+  background-image: linear-gradient(#0480b1, #01486d);
+  height: 3rem;
+  margin-bottom: 5rem; }
+  footer p {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: .9rem 0; }
+
+/*End of the Medium Query*/
+@media only screen and (min-width: 65rem) {
+  html, body, main {
+    background: #f9f9f9;
+    margin: 0 auto; }
+
+  div.wrapper header {
+    height: 90px;
+    margin: 0 auto;
+    max-width: 1200px; }
+
+  div.wrapper header img#logo {
+    max-width: 1200px;
+    width: 100%; }
+
+  /*NAVIGATION*/
+  nav {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+    height: 1rem;
+    background: #f9f9f9;
+    display: flex;
+    justify-content: right; }
+
+  nav ul {
+    width: 100%;
+    list-style-type: none;
+    height: 1rem;
+    margin: 0;
+    padding: 0; }
+
+  nav ul div#alignRight {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%; }
+
+  nav ul div#alignRight li a {
+    text-decoration: none;
+    color: #999999;
+    text-transform: uppercase;
+    padding-left: .5rem;
+    padding-right: 1rem;
+    font-family: 'Lato', sans-serif; }
+
+  nav ul div#alignRight li a i {
+    padding-right: .3rem; }
+
+  /*Main CSS Rules */
+  div#banner {
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: .5rem; }
+
+  div#banner img {
+    width: 100%; }
+
+  div#blueBanner {
+    background: #111118;
+    width: 100vw;
+    margin-top: 1rem;
+    padding-bottom: 2rem; }
+
+  div#bannerText {
+    margin: 0 auto;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 800px 400px; }
+
+  div#leftText, div#rightText {
+    color: white;
+    font-family: 'Lato', sans-serif; }
+
+  div#leftText {
+    padding-right: 4rem; }
+
+  div#leftText h1 {
+    color: #fdd831;
+    margin-bottom: .2rem;
+    font-weight: 800;
+    font-family: 'Poppins', sans-serif; }
+
+  div#leftText p {
+    margin-top: .2rem; }
+
+  div#leftText ul {
+    padding-left: 5rem; }
+
+  div#rightText h1.title {
+    color: #fdd831;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: .3rem; }
+
+  div#rightText h1.success {
+    font-family: 'Poppins', sans-serif;
+    color: #fdd831;
+    font-style: italic;
+    font-size: 2.5rem;
+    margin-top: .4rem; }
+
+  div#rightText {
+    text-align: right; }
+
+  div#rightText h3 {
+    margin: 0;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif; }
+
+  div.about {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto; }
+
+  div.about h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #0480b1;
+    margin-top: 4.5rem;
+    margin-bottom: 0rem; }
+
+  hr.divider {
+    max-width: 1200px;
+    margin-bottom: 3rem;
+    margin-top: 0; }
+
+  div.imageGrid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px;
+    grid-template-rows: 488px 400px 150px;
+    column-gap: 10px;
+    row-gap: 2rem;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 1.4rem; }
+
+  div.imageGrid p {
+    font-size: .8rem;
+    max-width: 100%;
+    margin: 0; }
+
+  div.itemA {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1; }
+    div.itemA figure {
+      width: 100%;
+      margin: 0; }
+      div.itemA figure figcaption {
+        max-width: 277.5px; }
+        div.itemA figure figcaption h2 {
+          margin-bottom: .2rem;
+          margin-top: 1.5rem;
+          color: #0480b1;
+          font-weight: 400;
+          font-size: 2rem; }
+        div.itemA figure figcaption p {
+          color: #999999;
+          line-height: 18px; }
+      div.itemA figure img {
+        width: 100%;
+        max-width: 277.5px; }
+
+  div.itemB {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1; }
+    div.itemB figure {
+      width: 100%;
+      margin: 0; }
+      div.itemB figure figcaption {
+        max-width: 277.5px; }
+        div.itemB figure figcaption h2 {
+          margin-bottom: .2rem;
+          margin-top: 1.5rem;
+          color: #0480b1;
+          font-weight: 400;
+          font-size: 2rem; }
+        div.itemB figure figcaption p {
+          color: #999999;
+          line-height: 18px; }
+      div.itemB figure img {
+        width: 100%;
+        max-width: 277.5px; }
+
+  div.itemC {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 1; }
+    div.itemC figure {
+      width: 100%;
+      margin: 0; }
+      div.itemC figure figcaption {
+        max-width: 277.5px; }
+        div.itemC figure figcaption h2 {
+          margin-bottom: .2rem;
+          margin-top: 1.5rem;
+          color: #0480b1;
+          font-weight: 400;
+          font-size: 2rem; }
+        div.itemC figure figcaption p {
+          color: #999999;
+          line-height: 18px; }
+      div.itemC figure img {
+        width: 100%;
+        max-width: 277.5px; }
+
+  div.itemD {
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 1; }
+    div.itemD figure {
+      width: 100%;
+      margin: 0; }
+      div.itemD figure figcaption {
+        max-width: 277.5px; }
+        div.itemD figure figcaption h2 {
+          margin-bottom: .3rem;
+          margin-top: 1.5rem;
+          color: #0480b1;
+          font-weight: 400;
+          font-size: 2rem; }
+        div.itemD figure figcaption p {
+          color: #999999;
+          line-height: 18px; }
+      div.itemD figure img {
+        width: 100%;
+        max-width: 277.5px; }
+
+  div.itemE {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    display: flex;
+    flex-basis: 33.33%;
+    max-width: 1200px;
+    padding-top: 1.5rem;
+    border-top: #999999 1px solid; }
+    div.itemE figure.figure1 {
+      margin-left: 0;
+      margin-top: 0;
+      margin-right: 25px;
+      max-width: 375px; }
+      div.itemE figure.figure1 figcaption {
+        width: 100%; }
+        div.itemE figure.figure1 figcaption h2 {
+          margin-bottom: .3rem;
+          margin-top: 1.5rem;
+          color: #0480b1;
+          font-weight: 400;
+          font-size: 2rem; }
+        div.itemE figure.figure1 figcaption p {
+          color: #999999;
+          line-height: 18px; }
+      div.itemE figure.figure1 img {
+        width: 100%; }
+    div.itemE figure.figure2 {
+      margin-left: 0;
+      margin-top: 0;
+      margin-right: 25px;
+      max-width: 375px; }
+      div.itemE figure.figure2 figcaption {
+        width: 100%; }
+        div.itemE figure.figure2 figcaption h2 {
+          margin-bottom: .3rem;
+          margin-top: 1.5rem;
+          color: #0480b1;
+          font-weight: 400;
+          font-size: 2rem; }
+        div.itemE figure.figure2 figcaption p {
+          color: #999999;
+          line-height: 18px; }
+      div.itemE figure.figure2 img {
+        width: 100%; }
+    div.itemE figure.figure3 {
+      grid-column: 1;
+      grid-row: 2 / span 2;
+      margin: 0;
+      max-width: 400px;
+      background: white; }
+      div.itemE figure.figure3 figcaption {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: white;
+        z-index: 999; }
+        div.itemE figure.figure3 figcaption button.pricing {
+          border-radius: 18px;
+          background-image: linear-gradient(#0480b1, #01486d);
+          color: white;
+          padding: .4rem;
+          font-size: 1.7rem;
+          font-weight: 400;
+          padding-right: 10px;
+          padding-left: 10px;
+          width: 290px;
+          margin: 0 auto;
+          margin-top: 0;
+          padding-top: 0; }
+        div.itemE figure.figure3 figcaption p {
+          color: #999999;
+          line-height: 18px;
+          margin: 0 auto;
+          padding-top: .8rem; }
+      div.itemE figure.figure3 img {
+        margin: 0;
+        padding: 0;
+        width: 400px;
+        margin-bottom: 0;
+        padding-bottom: 0; }
+
+  div.spanItem {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    padding-top: 70%; }
+    div.spanItem h2 {
+      margin-bottom: .3rem;
+      margin-top: 1.5rem;
+      color: #0480b1;
+      font-weight: 400;
+      font-size: 2rem; }
+    div.spanItem p {
+      color: #999999;
+      line-height: 18px; }
+
+  div.sponsers {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    background: white; }
+
+  footer {
+    width: 100%;
+    background-image: linear-gradient(#0480b1, #01486d);
+    height: 3rem;
+    margin-bottom: 5rem; }
+    footer p {
+      color: white;
+      font-family: 'Poppins', sans-serif;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: .9rem 0; } }
+/*End of the Medium Query*/
+
+/*# sourceMappingURL=styles.css.map */
